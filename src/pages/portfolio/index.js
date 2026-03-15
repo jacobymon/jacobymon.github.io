@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
+import { ProjectModal } from "./ProjectModal";
 
 export const Portfolio = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -26,13 +29,26 @@ export const Portfolio = () => {
                 <img src={data.img} alt="" />
                 <div className="content">
                   <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
+                  {data.details ? (
+                    <button
+                      className="po_view_btn"
+                      onClick={() => setSelectedProject(data.details)}
+                    >
+                      view project
+                    </button>
+                  ) : (
+                    <a href={data.link}>view project</a>
+                  )}
                 </div>
               </div>
             );
           })}
         </div>
       </Container>
+      <ProjectModal
+        project={selectedProject}
+        onClose={() => setSelectedProject(null)}
+      />
     </HelmetProvider>
   );
 };

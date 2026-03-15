@@ -78,3 +78,17 @@
 .po_item .content a:hover {
     text-decoration: none;
 }
+
+.po_view_btn {
+    background: var(--bg-color);
+    border: solid 1px var(--text-color);
+    padding: 4px 8px;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.po_view_btn:hover {
+    text-decoration: none;
+}
