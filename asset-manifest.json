@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ff2e6403.css",
+    "main.js": "/static/js/main.8093b424.js",
+    "static/media/Screenshot 2026-03-14 at 9.05.10 PM.png": "/static/media/Screenshot 2026-03-14 at 9.05.10 PM.27cbe00dbfe786ef7a18.png",
+    "static/media/IMG_6833.HEIC": "/static/media/IMG_6833.ceb5395f51072da5272e.HEIC",
+    "static/media/Screenshot 2025-08-13 at 5.41.54 PM.png": "/static/media/Screenshot 2025-08-13 at 5.41.54 PM.bd3622242e02259dc316.png",
+    "static/media/Screenshot 2025-04-24 at 2.50.15 PM.png": "/static/media/Screenshot 2025-04-24 at 2.50.15 PM.126855f6cd90f0b3acc8.png",
+    "static/media/Screenshot 2025-10-06 at 12.51.43 PM.png": "/static/media/Screenshot 2025-10-06 at 12.51.43 PM.361aa8ebfdb67d92d90d.png",
+    "static/media/Clinic Poster.jpg": "/static/media/Clinic Poster.ef66733b3b77ade1bf67.jpg",
+    "static/media/Screenshot 2025-08-06 at 3.28.54 PM.png": "/static/media/Screenshot 2025-08-06 at 3.28.54 PM.3c78513d801bec9727a4.png",
+    "static/media/Screenshot 2026-03-16 at 3.32.53 PM.png": "/static/media/Screenshot 2026-03-16 at 3.32.53 PM.fb0496e17eacd3c9f69e.png",
+    "static/media/Screenshot 2025-06-18 at 3.42.02 PM.png": "/static/media/Screenshot 2025-06-18 at 3.42.02 PM.07a6a9edd920735609f7.png",
+    "static/media/405494763-04356ab2-f12a-4676-aaf7-6ced7c7d022a.gif": "/static/media/405494763-04356ab2-f12a-4676-aaf7-6ced7c7d022a.ef654694d744dff29269.gif",
+    "static/media/Screenshot 2025-06-18 at 3.43.45 PM.png": "/static/media/Screenshot 2025-06-18 at 3.43.45 PM.931ec3b68a2e465e757e.png",
+    "static/media/MuddBattProto.jpg": "/static/media/MuddBattProto.090c313675ffa414ce6b.jpg",
+    "static/media/exponent_ SWE Coding Questions.png": "/static/media/exponent_ SWE Coding Questions.c7f1945502b734d8dc63.png",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.ff2e6403.css",
+    "static/js/main.8093b424.js"
+  ]
+}
