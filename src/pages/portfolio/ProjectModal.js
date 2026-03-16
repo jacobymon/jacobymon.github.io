@@ -14,10 +14,10 @@ export const ProjectModal = ({ project, onClose }) => {
         <div className="pm_media_list">
           {project.media.map((item, i) => (
             <div key={i} className="pm_media_item">
-              {item.title && <h5 className="pm_item_title">{item.title}</h5>}
+              {item.title && item.type !== "link" && <h5 className="pm_item_title">{item.title}</h5>}
               {item.type === "image" ? (
                 <img src={item.src} alt={item.title || ""} />
-              ) : (
+              ) : item.type === "video" ? (
                 <div className="pm_video_wrapper">
                   <iframe
                     src={item.src}
@@ -27,7 +27,16 @@ export const ProjectModal = ({ project, onClose }) => {
                     allowFullScreen
                   />
                 </div>
-              )}
+              ) : item.type === "link" ? (
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="pm_link_btn"
+                >
+                  {item.title}
+                </a>
+              ) : null}
               {item.description && (
                 <p className="pm_item_description">{item.description}</p>
               )}

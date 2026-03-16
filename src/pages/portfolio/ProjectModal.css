@@ -48,6 +48,20 @@
     font-weight: 600;
 }
 
+.pm_link_btn {
+    display: inline-block;
+    padding: 6px 14px;
+    border: solid 1px var(--text-color);
+    color: var(--text-color);
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+.pm_link_btn:hover {
+    text-decoration: none;
+    opacity: 0.75;
+}
+
 .pm_item_description {
     margin-top: 0.5rem;
     font-size: 0.95rem;

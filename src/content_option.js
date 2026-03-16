@@ -12,7 +12,7 @@ const introdata = {
         third: "I develop full-stack apps",
     },
     description: "CS graduate from Harvey Mudd College with a passion for agentic AI, autonomous robotics, and full-stack engineering. Gates Scholar. NCAA soccer co-captain.",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    your_img_url: require("./assets/images/IMG_6833.HEIC"),
 };
 
 const dataabout = {
@@ -82,14 +82,48 @@ const services = [
 
 const dataportfolio = [
     {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "Earnings Call Agent — AI agent that verifies earnings calls against financial data using Claude and Yahoo Finance, with LLM call routing and a company financials database.",
+        img: require("./assets/images/Screenshot 2025-04-24 at 2.50.15 PM.png"),
+        description: "Autonomous Mower System — Embedded Linux, GUI, and path planning algorithms built on a Doosan Bobcat Zero-Turn Mower",
         link: "#",
+        details: {
+            title: "Autonomous Mower System",
+            media: [
+                { type: "image", src: require("./assets/images/Clinic Poster.jpg"), title: "Poster", description: "" },
+                { type: "video", src: "https://www.youtube.com/embed/fKXMmmSC6vM", title: "Demo", description: "" },
+                { type: "link", href: "https://www.linkedin.com/in/jacoby-lockman/overlay/experience/2617928712/multiple-media-viewer/?profileId=ACoAAD6KrBUBQSoiE1II3G3E1WCF2-QeROVuZlQ&treasuryMediaId=1767598329016", title: "Final Report", description: "(click to view)" },
+            ],
+        },
     },
     {
-        img: "https://picsum.photos/400/500/?grayscale",
+        img: require("./assets/images/images.jpeg"),
+        description: "Earnings Call Agent — AI agent that verifies earnings calls against financial data using Claude and Yahoo Finance, with LLM call routing and a company financials database.",
+        link: "https://www.loom.com/share/83567bc3756e40be82cf96df00b89e0a",
+        details: {
+            title: "Earnings Call Agent",
+            media: [
+                { type: "video", src: "https://www.loom.com/embed/83567bc3756e40be82cf96df00b89e0a", title: "Demo", description: "" },
+                { type: "link", href: "https://github.com/jacobymon/Kip-Take-Home", title: "GitHub Repository", description: "" },
+            ],
+
+        },
+
+
+    },
+    {
+        img: require("./assets/images/Screenshot 2025-08-13 at 5.41.54 PM.png"),
         description: "Duo-ble 007 Agent — Speech-to-speech language learning agent with 96% cost reduction vs. Duolingo Max (~$1.15/mo), built with GPT-4 and Pinecone vector memory.",
         link: "#",
+        details: {
+            title: "Russell (Duo-ble Agent)",
+            media: [
+                { type: "video", src: "https://www.youtube.com/embed/46zSlaQKdVg", title: "Demo", description: "" },
+                { type: "video", src: "https://www.youtube.com/embed/dTCfbDW7TpQ", title: "Early User Testing", description: "" },
+                { type: "link", href: "https://github.com/jacobymon/Hackathon2025", title: "GitHub Repository", description: "" },
+
+            ],
+
+        },
+
     },
     {
         img: require("./assets/images/exponent_ SWE Coding Questions.png"),
@@ -99,19 +133,55 @@ const dataportfolio = [
             title: "Mudd Music Management Platform",
             media: [
                 { type: "image", src: require("./assets/images/Screenshot 2025-08-06 at 3.28.54 PM.png"), title: "Host UI Display", description: "Choose between your spotify or youtube catalogue and share this queue with friends on the same wifi network!" },
+                { type: "image", src: require("./assets/images/Screenshot 2026-03-16 at 3.32.53 PM.png"), title: "", description: "Save and load cross platform playlists." },
+                
+
+                { type: "link", href: "https://github.com/jacobymon/M-3/tree/youtubeAPI", title: "GitHub Repository", description: "" },
                 // { type: "video", src: "https://www.youtube.com/embed/YOUR_VIDEO_ID", title: "Feature name", description: "Description of this feature" },
             ],
         },
     },
     {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "Jacoby's Relational Database — A database built in Java with a 50-page buffer pool, Selinger-style optimizer, and strict 2PL concurrency control with deadlock detection.",
+        img: require("./assets/images/Screenshot 2025-10-06 at 12.51.43 PM.png"),
+        description: "Interview Sketcher - A browser based sketching tool for screen shared technical interviews.",
         link: "#",
+        details: {
+            title: "Interview Sketcher",
+            media: [
+                { type: "video", src: "https://www.youtube.com/embed/sssuaGCi9WY", title: "Set Up", description: "" },
+                { type: "link", href: "https://chromewebstore.google.com/search/Interview%20Sketch%20Annotator%20MVP", title: "Chrome Webstore", description: "" },
+                // { type: "video", src: "https://www.youtube.com/embed/YOUR_VIDEO_ID", title: "Feature name", description: "Description of this feature" },
+            ],
+        },
     },
     {
-        img: "https://picsum.photos/400/350/?grayscale",
+        img: require("./assets/images/DB.jpeg"),
+        description: "Jacoby's Relational Database — A database built in Java with a 50-page buffer pool, Selinger-style optimizer, and strict 2PL concurrency control with deadlock detection.",
+        link: "https://github.com/jacobymon/SimpleDataBase",
+    },
+    {
+        img: require("./assets/images/Screenshot 2026-03-14 at 9.05.10 PM.png"),
         description: "VR Wet Lab Simulation — Immersive virtual reality scientific lab experiences for remote education built with Unity and Meta VR. Won 1 of 6 awards at the 5C hackathon.",
+        link: "https://devpost.com/software/accessible-labs",
+    },
+    {
+        img: require("./assets/images/MuddBattProto.jpg"),
+        description: "MuddBatt — A coding practice platform for the Harvey Mudd College CS department",
         link: "#",
+        details: {
+            title: "MuddBatt",
+            media: [
+                { type: "image", src: require("./assets/images/Screenshot 2025-06-18 at 3.42.02 PM.png"), title: "Home Page", description: "Tutors can create their own problems for students" },
+                { type: "image", src: require("./assets/images/Screenshot 2025-06-18 at 3.43.45 PM.png"), title: "Example Problem", description: "" },
+                { type: "link", href: "https://github.com/jacobymon/MuddBatt", title: "GitHub Repository", description: "" },
+                // { type: "video", src: "https://www.youtube.com/embed/YOUR_VIDEO_ID", title: "Feature name", description: "Description of this feature" },
+            ],
+        },
+    },
+    {
+        img: require("./assets/images/405494763-04356ab2-f12a-4676-aaf7-6ced7c7d022a.gif"),
+        description: "Spampede - Basically snake with a fun twist, and a good open source platform to play around with. The AI feature is fun. Although it's not generative AI;)",
+        link: "https://github.com/jacobymon/Spampede",
     },
 ];
 
